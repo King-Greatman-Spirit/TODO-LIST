@@ -1,0 +1,41 @@
+python3 -m venv venv# Create virtual environment
+source venv/bin/activate  #for mac users
+venv/Scripts/activate  #for windows users
+python3 -m pip install --upgrade pip #Pip upgrade
+
+# You'll need the full path to the Python 3 version 
+# of virtualenv, so run the following to view it:
+which virtualenv
+
+# install all dependencie/libraries in requirements.txt
+pip install -r requirements.txt
+# move from freeze to requirements.txt
+pip freeze > requirements.txt
+# install pkgs at once
+pip install django pillow requests
+
+# to delete git repo
+rm -f -r .git
+
+pip install django-debug-toolbar
+django-admin startproject djangoproject
+py manage.py startapp todo
+
+# to change django port
+python manage.py runserver 7000
+python manage.py runserver <your IP>:<port>
+python manage.py runserver <your port>
+
+OR
+
+# in your project manage.py file add
+# from django.core.management.commands.runserver import Command as runserver
+# then in def main():
+# runserver.default_port = "1999" 
+
+OR
+
+# in the last version of Django(Right now: 4.0.3), you can add these lines to your settings.py file
+
+# from django.core.management.commands.runserver import Command as runserver
+# runserver.default_port = "8000"
