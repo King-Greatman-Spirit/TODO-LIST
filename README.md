@@ -7,7 +7,7 @@ MY DJANGO TODO LIST APP WITH COUNTDOWN TIMER USING DJANOG, HTML, CSS, JAVASCRIPT
 
 # Installation guide
 
-git clone hhttps://github.com/King-Greatman-Spirit/TODO-LIST-APP-WITH-COUNTDOWN-TIMER.git
+git clone https://github.com/King-Greatman-Spirit/TODO-LIST.git
 
 #Setup Project
 1. cd Django-Todo-App-With-Countdown-Timer
